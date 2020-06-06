@@ -7,6 +7,7 @@
 //
 
 #import "BSBaseTableViewController.h"
+#import "UITableView+BSAdditionalProperty.h"
 
 @interface BSBaseTableViewController ()
 

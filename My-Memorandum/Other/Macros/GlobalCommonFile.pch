@@ -12,7 +12,14 @@
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
-#import <Masonry.h>
+// MARK: - 头文件<声明>
+#import "BSColorsMacro.h"
+#import "BSCategoriesMacro.h"
+#import "BSThirdPartysMacro.h"
+#import "BSProtocolsMacro.h"
 
+#import "BSCommonMacros.h"
+#import "BSCommonFunctions.h"
+#import "BSCommonConfigurations.h"
 #endif /* GlobalCommonFile_pch */
 

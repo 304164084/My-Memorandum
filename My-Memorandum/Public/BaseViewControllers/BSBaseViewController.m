@@ -56,7 +56,6 @@
 {
     // viewcontroller 的顶部与底部不超过navigationbar 和 tabbar
     self.edgesForExtendedLayout = UIRectEdgeNone;
-    self.view.backgroundColor = BSColor_WhiteLight;
 }
 
 @end

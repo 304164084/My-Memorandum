@@ -31,6 +31,9 @@
 		D8E5D887248B6DB300D3255C /* NSString+BSAdditionalFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E5D876248B6DB300D3255C /* NSString+BSAdditionalFunction.m */; };
 		D8E5D888248B6DB300D3255C /* UIColor+BSAdditionalFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E5D878248B6DB300D3255C /* UIColor+BSAdditionalFunction.m */; };
 		D8E5D889248B6DB300D3255C /* UIView+BSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E5D879248B6DB300D3255C /* UIView+BSKit.m */; };
+		D8E5D895248B70C000D3255C /* BSComponentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E5D88D248B70C000D3255C /* BSComponentManager.m */; };
+		D8E5D896248B70C000D3255C /* MGJRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E5D890248B70C000D3255C /* MGJRouter.m */; };
+		D8E5D897248B70C000D3255C /* BSBaseComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E5D891248B70C000D3255C /* BSBaseComponent.m */; };
 		E9DD71FAF3F6815C89A1C6DA /* Pods_My_Memorandum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD3D68671655C509C398327 /* Pods_My_Memorandum.framework */; };
 /* End PBXBuildFile section */
 
@@ -108,6 +111,21 @@
 		D8E5D878248B6DB300D3255C /* UIColor+BSAdditionalFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BSAdditionalFunction.m"; sourceTree = "<group>"; };
 		D8E5D879248B6DB300D3255C /* UIView+BSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BSKit.m"; sourceTree = "<group>"; };
 		D8E5D87A248B6DB300D3255C /* UITableView+BSAdditionalProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+BSAdditionalProperty.h"; sourceTree = "<group>"; };
+		D8E5D88C248B70C000D3255C /* BSBaseComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSBaseComponent.h; sourceTree = "<group>"; };
+		D8E5D88D248B70C000D3255C /* BSComponentManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSComponentManager.m; sourceTree = "<group>"; };
+		D8E5D88F248B70C000D3255C /* MGJRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGJRouter.h; sourceTree = "<group>"; };
+		D8E5D890248B70C000D3255C /* MGJRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGJRouter.m; sourceTree = "<group>"; };
+		D8E5D891248B70C000D3255C /* BSBaseComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSBaseComponent.m; sourceTree = "<group>"; };
+		D8E5D892248B70C000D3255C /* BSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSAppDelegate.h; sourceTree = "<group>"; };
+		D8E5D893248B70C000D3255C /* BSRouterDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSRouterDataSource.h; sourceTree = "<group>"; };
+		D8E5D894248B70C000D3255C /* BSComponentManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSComponentManager.h; sourceTree = "<group>"; };
+		D8E5D899248B733C00D3255C /* BSCategoriesMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSCategoriesMacro.h; sourceTree = "<group>"; };
+		D8E5D89A248B733C00D3255C /* BSProtocolsMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSProtocolsMacro.h; sourceTree = "<group>"; };
+		D8E5D89B248B733D00D3255C /* BSThirdPartysMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSThirdPartysMacro.h; sourceTree = "<group>"; };
+		D8E5D89C248B734B00D3255C /* BSCommonMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSCommonMacros.h; sourceTree = "<group>"; };
+		D8E5D89D248B734B00D3255C /* BSColorsMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSColorsMacro.h; sourceTree = "<group>"; };
+		D8E5D89F248B738000D3255C /* BSCommonFunctions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSCommonFunctions.h; sourceTree = "<group>"; };
+		D8E5D8A0248B73D800D3255C /* BSCommonConfigurations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSCommonConfigurations.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +204,7 @@
 		D8E5D81D248B451F00D3255C /* My-Memorandum */ = {
 			isa = PBXGroup;
 			children = (
+				D8E5D88A248B70C000D3255C /* Services */,
 				D8E5D856248B6DB300D3255C /* Public */,
 				D8E5D855248B6D9800D3255C /* LaunchFile */,
 				D8E5D854248B6D5000D3255C /* Other */,
@@ -215,10 +234,10 @@
 		D8E5D854248B6D5000D3255C /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				D8E5D898248B731300D3255C /* Macros */,
 				D8E5D82A248B452000D3255C /* Assets.xcassets */,
 				D8E5D82C248B452000D3255C /* LaunchScreen.storyboard */,
 				D8E5D830248B452000D3255C /* main.m */,
-				D8E5D853248B4A0000D3255C /* GlobalCommonFile.pch */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -310,6 +329,52 @@
 				D8E5D874248B6DB300D3255C /* UIViewController+FetchAssignmentViewController.m */,
 			);
 			path = Categories;
+			sourceTree = "<group>";
+		};
+		D8E5D88A248B70C000D3255C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D8E5D88B248B70C000D3255C /* BaseComponent */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D8E5D88B248B70C000D3255C /* BaseComponent */ = {
+			isa = PBXGroup;
+			children = (
+				D8E5D88E248B70C000D3255C /* MGJRouter */,
+				D8E5D892248B70C000D3255C /* BSAppDelegate.h */,
+				D8E5D88C248B70C000D3255C /* BSBaseComponent.h */,
+				D8E5D891248B70C000D3255C /* BSBaseComponent.m */,
+				D8E5D894248B70C000D3255C /* BSComponentManager.h */,
+				D8E5D88D248B70C000D3255C /* BSComponentManager.m */,
+				D8E5D893248B70C000D3255C /* BSRouterDataSource.h */,
+			);
+			path = BaseComponent;
+			sourceTree = "<group>";
+		};
+		D8E5D88E248B70C000D3255C /* MGJRouter */ = {
+			isa = PBXGroup;
+			children = (
+				D8E5D88F248B70C000D3255C /* MGJRouter.h */,
+				D8E5D890248B70C000D3255C /* MGJRouter.m */,
+			);
+			path = MGJRouter;
+			sourceTree = "<group>";
+		};
+		D8E5D898248B731300D3255C /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				D8E5D853248B4A0000D3255C /* GlobalCommonFile.pch */,
+				D8E5D8A0248B73D800D3255C /* BSCommonConfigurations.h */,
+				D8E5D89F248B738000D3255C /* BSCommonFunctions.h */,
+				D8E5D899248B733C00D3255C /* BSCategoriesMacro.h */,
+				D8E5D89D248B734B00D3255C /* BSColorsMacro.h */,
+				D8E5D89C248B734B00D3255C /* BSCommonMacros.h */,
+				D8E5D89A248B733C00D3255C /* BSProtocolsMacro.h */,
+				D8E5D89B248B733D00D3255C /* BSThirdPartysMacro.h */,
+			);
+			path = Macros;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -566,7 +631,10 @@
 				D8E5D889248B6DB300D3255C /* UIView+BSKit.m in Sources */,
 				D8E5D823248B451F00D3255C /* SceneDelegate.m in Sources */,
 				D8E5D886248B6DB300D3255C /* UIViewController+FetchAssignmentViewController.m in Sources */,
+				D8E5D896248B70C000D3255C /* MGJRouter.m in Sources */,
 				D8E5D87C248B6DB300D3255C /* BSCollectionViewController.m in Sources */,
+				D8E5D897248B70C000D3255C /* BSBaseComponent.m in Sources */,
+				D8E5D895248B70C000D3255C /* BSComponentManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -731,7 +799,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GN8US939RV;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/My-Memorandum/GlobalCommonFile.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/My-Memorandum/Other/Macros/GlobalCommonFile.pch";
 				INFOPLIST_FILE = "My-Memorandum/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -752,7 +820,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GN8US939RV;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/My-Memorandum/GlobalCommonFile.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/My-Memorandum/Other/Macros/GlobalCommonFile.pch";
 				INFOPLIST_FILE = "My-Memorandum/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
