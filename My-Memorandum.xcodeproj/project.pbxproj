@@ -266,16 +266,16 @@
 		D8E5D85C248B6DB300D3255C /* BaseViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				D8E5D85D248B6DB300D3255C /* BSCollectionViewController.m */,
 				D8E5D85E248B6DB300D3255C /* BSBaseNavigationController.h */,
-				D8E5D85F248B6DB300D3255C /* BSBaseTableViewController.h */,
-				D8E5D860248B6DB300D3255C /* BSBaseViewController.m */,
-				D8E5D861248B6DB300D3255C /* BSBaseTabBarController.m */,
 				D8E5D862248B6DB300D3255C /* BSBaseNavigationController.m */,
-				D8E5D863248B6DB300D3255C /* BSCollectionViewController.h */,
-				D8E5D864248B6DB300D3255C /* BSBaseTableViewController.m */,
 				D8E5D865248B6DB300D3255C /* BSBaseTabBarController.h */,
+				D8E5D861248B6DB300D3255C /* BSBaseTabBarController.m */,
+				D8E5D85F248B6DB300D3255C /* BSBaseTableViewController.h */,
+				D8E5D864248B6DB300D3255C /* BSBaseTableViewController.m */,
 				D8E5D866248B6DB300D3255C /* BSBaseViewController.h */,
+				D8E5D860248B6DB300D3255C /* BSBaseViewController.m */,
+				D8E5D863248B6DB300D3255C /* BSCollectionViewController.h */,
+				D8E5D85D248B6DB300D3255C /* BSCollectionViewController.m */,
 			);
 			path = BaseViewControllers;
 			sourceTree = "<group>";
@@ -292,22 +292,22 @@
 		D8E5D86A248B6DB300D3255C /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				D8E5D86B248B6DB300D3255C /* UIButton+KSEdgeInsets.m */,
-				D8E5D86C248B6DB300D3255C /* UIViewController+FetchAssignmentViewController.h */,
-				D8E5D86D248B6DB300D3255C /* UIDevice+AdditionalInfo.m */,
-				D8E5D86E248B6DB300D3255C /* UIView+Frame.m */,
 				D8E5D86F248B6DB300D3255C /* NSString+BSAdditionalFunction.h */,
+				D8E5D876248B6DB300D3255C /* NSString+BSAdditionalFunction.m */,
+				D8E5D875248B6DB300D3255C /* UIButton+KSEdgeInsets.h */,
+				D8E5D86B248B6DB300D3255C /* UIButton+KSEdgeInsets.m */,
+				D8E5D872248B6DB300D3255C /* UIColor+BSAdditionalFunction.h */,
+				D8E5D878248B6DB300D3255C /* UIColor+BSAdditionalFunction.m */,
+				D8E5D873248B6DB300D3255C /* UIDevice+AdditionalInfo.h */,
+				D8E5D86D248B6DB300D3255C /* UIDevice+AdditionalInfo.m */,
+				D8E5D87A248B6DB300D3255C /* UITableView+BSAdditionalProperty.h */,
 				D8E5D870248B6DB300D3255C /* UITableView+BSAdditionalProperty.m */,
 				D8E5D871248B6DB300D3255C /* UIView+BSKit.h */,
-				D8E5D872248B6DB300D3255C /* UIColor+BSAdditionalFunction.h */,
-				D8E5D873248B6DB300D3255C /* UIDevice+AdditionalInfo.h */,
-				D8E5D874248B6DB300D3255C /* UIViewController+FetchAssignmentViewController.m */,
-				D8E5D875248B6DB300D3255C /* UIButton+KSEdgeInsets.h */,
-				D8E5D876248B6DB300D3255C /* NSString+BSAdditionalFunction.m */,
-				D8E5D877248B6DB300D3255C /* UIView+Frame.h */,
-				D8E5D878248B6DB300D3255C /* UIColor+BSAdditionalFunction.m */,
 				D8E5D879248B6DB300D3255C /* UIView+BSKit.m */,
-				D8E5D87A248B6DB300D3255C /* UITableView+BSAdditionalProperty.h */,
+				D8E5D877248B6DB300D3255C /* UIView+Frame.h */,
+				D8E5D86E248B6DB300D3255C /* UIView+Frame.m */,
+				D8E5D86C248B6DB300D3255C /* UIViewController+FetchAssignmentViewController.h */,
+				D8E5D874248B6DB300D3255C /* UIViewController+FetchAssignmentViewController.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
