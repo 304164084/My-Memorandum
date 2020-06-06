@@ -26,7 +26,6 @@
 - (void)loadView
 {
     [super loadView];
-    [self setupViews];
 }
 
 - (void)viewDidLoad {
@@ -52,25 +51,22 @@
     [item setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
 }
 
-- (void)setupViews
+- (void)configTabBarWithTiles:(NSArray<NSString *> *)titles
+                 normalImages:(NSArray<NSString *> *)normalImages
+               selectedImages:(NSArray<NSString *> *)selectedImages
+              viewControllers:(NSArray<UIViewController *> *)viewControllers
 {
-    // 设置nav
-    NSArray *tabBarItemsName = @[@"首页", @"标签-1", @"标签-2", @"标签-3"];
-    NSArray *tabBarItemsIconNormal = @[@"tab_home_n", @"tab_search_n", @"tab_shop_n", @"tab_account_n"];
-    NSArray *tabBarItemsIconSelected = @[@"tab_home_sel", @"tab_search_sel", @"tab_shop_sel", @"tab_account_sel"];
-    NSArray *tabBarItemsVC = @[@"ViewController", @"BSPrivateIdeaViewController", @"ViewController", @"ViewController"];
-    
-    [tabBarItemsVC enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    [viewControllers enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         
-        UIImage *normalImage = [UIImage imageNamed:tabBarItemsIconNormal[idx]];
-        UIImage *selectedImage = [UIImage imageNamed:tabBarItemsIconSelected[idx]];
+        UIImage *normalImage = [UIImage imageNamed:normalImages[idx]];
+        UIImage *selectedImage = [UIImage imageNamed:selectedImages[idx]];
         
-        UIViewController *vc = [[NSClassFromString(tabBarItemsVC[idx]) alloc] init];
-        vc.tabBarItem.title = tabBarItemsName[idx];
+        UIViewController *vc = viewControllers[idx];
+        vc.tabBarItem.title = titles[idx];
         vc.tabBarItem.image = [normalImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         vc.tabBarItem.selectedImage = [selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         
-        vc.navigationItem.title = tabBarItemsName[idx];
+        vc.navigationItem.title = titles[idx];
         BSBaseNavigationController *nvc = [[BSBaseNavigationController alloc] initWithRootViewController:vc];
         [self addChildViewController:nvc];
     }];

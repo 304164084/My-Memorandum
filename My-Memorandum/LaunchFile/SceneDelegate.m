@@ -8,17 +8,41 @@
 
 #import "SceneDelegate.h"
 
+#import "BSBaseTabBarController.h"
+#import "BSMainViewController.h""
+
 @interface SceneDelegate ()
 
 @end
 
 @implementation SceneDelegate
 
+/**
+ 设置主窗口UI
+ */
+- (UIViewController *)setupKeyWindow
+{
+    BSMainViewController *mainVC = [BSMainViewController new];
+    BSBaseTabBarController *tabBarVC = [[BSBaseTabBarController alloc] init];
+    
+    [tabBarVC configTabBarWithTiles:@[@"记录", @"记录"]
+                       normalImages:@[@"tab_shop_n", @"tab_shop_n"]
+                     selectedImages:@[@"tab_shop_sel", @"tab_shop_sel"]
+                    viewControllers:@[mainVC, [BSMainViewController new]]];
+    
+    return tabBarVC;
+}
 
 - (void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *)connectionOptions {
     // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
     // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+    if (![scene isKindOfClass:[UIWindowScene class]]) {
+        return;
+    }
+    self.window = [[UIWindow alloc] initWithWindowScene:(UIWindowScene *)scene];
+    self.window.rootViewController = [self setupKeyWindow];
+    [self.window makeKeyAndVisible];
 }
 
 

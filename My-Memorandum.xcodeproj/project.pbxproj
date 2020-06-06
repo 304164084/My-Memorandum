@@ -34,6 +34,7 @@
 		D8E5D895248B70C000D3255C /* BSComponentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E5D88D248B70C000D3255C /* BSComponentManager.m */; };
 		D8E5D896248B70C000D3255C /* MGJRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E5D890248B70C000D3255C /* MGJRouter.m */; };
 		D8E5D897248B70C000D3255C /* BSBaseComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E5D891248B70C000D3255C /* BSBaseComponent.m */; };
+		D8E5D8A4248B769300D3255C /* BSMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E5D8A3248B769300D3255C /* BSMainViewController.m */; };
 		E9DD71FAF3F6815C89A1C6DA /* Pods_My_Memorandum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD3D68671655C509C398327 /* Pods_My_Memorandum.framework */; };
 /* End PBXBuildFile section */
 
@@ -126,6 +127,8 @@
 		D8E5D89D248B734B00D3255C /* BSColorsMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSColorsMacro.h; sourceTree = "<group>"; };
 		D8E5D89F248B738000D3255C /* BSCommonFunctions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSCommonFunctions.h; sourceTree = "<group>"; };
 		D8E5D8A0248B73D800D3255C /* BSCommonConfigurations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSCommonConfigurations.h; sourceTree = "<group>"; };
+		D8E5D8A2248B769300D3255C /* BSMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSMainViewController.h; sourceTree = "<group>"; };
+		D8E5D8A3248B769300D3255C /* BSMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSMainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +210,7 @@
 				D8E5D88A248B70C000D3255C /* Services */,
 				D8E5D856248B6DB300D3255C /* Public */,
 				D8E5D855248B6D9800D3255C /* LaunchFile */,
+				D8E5D8A1248B766A00D3255C /* Modules */,
 				D8E5D854248B6D5000D3255C /* Other */,
 				D8E5D82F248B452000D3255C /* Info.plist */,
 			);
@@ -375,6 +379,15 @@
 				D8E5D89B248B733D00D3255C /* BSThirdPartysMacro.h */,
 			);
 			path = Macros;
+			sourceTree = "<group>";
+		};
+		D8E5D8A1248B766A00D3255C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				D8E5D8A2248B769300D3255C /* BSMainViewController.h */,
+				D8E5D8A3248B769300D3255C /* BSMainViewController.m */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -620,6 +633,7 @@
 				D8E5D888248B6DB300D3255C /* UIColor+BSAdditionalFunction.m in Sources */,
 				D8E5D885248B6DB300D3255C /* UITableView+BSAdditionalProperty.m in Sources */,
 				D8E5D883248B6DB300D3255C /* UIDevice+AdditionalInfo.m in Sources */,
+				D8E5D8A4248B769300D3255C /* BSMainViewController.m in Sources */,
 				D8E5D87B248B6DB300D3255C /* BSBaseModel.m in Sources */,
 				D8E5D87F248B6DB300D3255C /* BSBaseNavigationController.m in Sources */,
 				D8E5D884248B6DB300D3255C /* UIView+Frame.m in Sources */,

@@ -12,6 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BSBaseTabBarController : UITabBarController
 
+- (void)configTabBarWithTiles:(NSArray<NSString *> *)titles
+                 normalImages:(NSArray<NSString *> *)normalImages
+               selectedImages:(NSArray<NSString *> *)selectedImages
+              viewControllers:(NSArray<UIViewController *> *)viewControllers;
+
 @end
 
 NS_ASSUME_NONNULL_END
